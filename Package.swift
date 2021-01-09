@@ -14,7 +14,7 @@ let package = Package(
         //.package(url: "https://github.com/vapor/core.git", from: "3.0.0-rc"),
     ],
     targets: [
-        .target(name: "TCP", dependencies: ["Async", "Bits", "COperatingSystem", "Debugging"]),
-        .testTarget(name: "TCPTests", dependencies: ["Async", "TCP"]),
+        .target(name: "TCP", dependencies: ["Bits", "COperatingSystem", "Debugging"]),
+        .testTarget(name: "TCPTests", dependencies: ["TCP"]),
     ]
 )
