@@ -11,7 +11,7 @@ let package = Package(
         //.package(url: "https://github.com/vapor/async.git", from: "1.0.0-rc"),
 
         // 🌎 Utility package containing tools for byte manipulation, Codable, OS APIs, and debugging.
-        //.package(url: "https://github.com/vapor/core.git", from: "3.0.0-rc"),
+        .package(url: "https://github.com/vapor/core.git", from: "3.0.0-rc"),
     ],
     targets: [
         .target(name: "TCP", dependencies: ["Bits", "COperatingSystem", "Debugging"]),
